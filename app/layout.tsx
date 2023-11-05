@@ -1,8 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Trello 2.0 Clone',
@@ -36,7 +33,7 @@ export default function RootLayout({
         />
         <link rel='manifest' href='/site.webmanifest' />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className='bg-[#f5f6f8]'>{children}</body>
     </html>
   );
 }
